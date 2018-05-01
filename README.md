@@ -1,9 +1,9 @@
 # react-i18nify-mobx
-MobX integration for `react-i18nify`, providing simple i18n translation and localization components and helpers for React+MobX applications.
+MobX bindings for `react-i18nify`, providing simple i18n translation and localization components and helpers for React+MobX applications.
 
 *Note:* This library is still in a pre-release stage.
 
-*Note:* If you're not using MobX, feel free to just use [react-i18nify](https://github.com/JSxMachina/react-i18nify) instead.
+*Note:* If you're not using MobX, feel free to just use [`react-i18nify`](https://github.com/JSxMachina/react-i18nify) instead.
 
 [![NPM version][version-image]][npm-url] [![Downloads][downloads-image]][npm-url]
 
@@ -62,7 +62,7 @@ i18nStore.setTranslations({
 i18nStore.setLocale('nl');
 ```
 
-As the `i18nStore` is a MobX store, it can be inserted into your app by using:
+As the `i18nStore` is a MobX store, it can be inserted into your app and used in your React components:
 
 ```JavaScript
 import { i18nStore } from 'react-i18nify-mobx';
@@ -71,6 +71,8 @@ import { i18nStore } from 'react-i18nify-mobx';
   <App />
 </Provider>
 ```
+
+For more on inserting stores in React apps, see [`mobx-react`](https://github.com/mobxjs/mobx-react).
 
 Now you're all set up to unleash the power of `react-i18nify-mobx`!
 
@@ -136,21 +138,21 @@ import { I18n, t } from 'react-i18nify-mobx';
 
 ### `i18nStore`
 
-MobX store for locale and translations
+MobX store for storing the locale and translations
 
-* @observable `locale` (string)
+* `@observable locale` (string)
 
-Stores the currently used locale.
+Observable which holds the currently used locale.
 
-* @observable `translations` (object)
+* `@observable translations` (object)
 
-Stores all currently used translations.
+Observable which holds the currently used translations.
 
-* @action `setLocale` (string)
+* `@action setLocale(string)`
 
 Action to set the used locale.
 
-* @action `setTranslations` (object)
+* `@action `setTranslations(object)`
 
 Action to set the used translations.
 
