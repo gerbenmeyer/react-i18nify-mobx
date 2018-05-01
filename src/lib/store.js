@@ -21,4 +21,4 @@ class I18nStore {
   }
 }
 
-export default new I18nStore();
+module.exports = new I18nStore();
