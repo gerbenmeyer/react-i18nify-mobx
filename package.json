@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "mobx": "^4.2.0",
-    "react-i18nify": "^2.0.0-6"
+    "react-i18nify": "^2.0.0-7"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
