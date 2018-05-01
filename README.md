@@ -138,7 +138,7 @@ import { I18n, t } from 'react-i18nify-mobx';
 
 ### `i18nStore`
 
-MobX store for storing the locale and translations
+MobX store for storing the locale and translations, with the following observables and actions:
 
 * `@observable locale` (string)
 
@@ -152,7 +152,7 @@ Observable which holds the currently used translations.
 
 Action to set the used locale.
 
-* `@action `setTranslations(object)`
+* `@action setTranslations(object)`
 
 Action to set the used translations.
 
