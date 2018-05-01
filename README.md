@@ -1,5 +1,5 @@
 # react-i18nify-mobx
-MobX bindings for `react-i18nify`, providing simple i18n translation and localization components and helpers for React+MobX applications.
+MobX bindings for `react-i18nify`, providing simple translation and localization components for React+MobX applications.
 
 *Note:* This library is still in a pre-release stage.
 
@@ -72,7 +72,7 @@ import { i18nStore } from 'react-i18nify-mobx';
 </Provider>
 ```
 
-For more on inserting stores in React apps, see [`mobx-react`](https://github.com/mobxjs/mobx-react).
+To learn more about inserting stores in React apps, please have a look at [`mobx-react`](https://github.com/mobxjs/mobx-react).
 
 Now you're all set up to unleash the power of `react-i18nify-mobx`!
 
