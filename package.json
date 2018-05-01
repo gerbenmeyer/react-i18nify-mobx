@@ -1,0 +1,57 @@
+{
+  "name": "react-i18nify-mobx",
+  "version": "0.0.1",
+  "description": "Simple i18n translation and localization components and helpers for React+MobX applications.",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm test -- --watch",
+    "lint": "eslint src/**/*.jsx src/**/*.js __tests__/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "rm -rf build && babel src -d build",
+    "prepare": "npm run build",
+    "precommit": "npm run lint && npm test"
+  },
+  "files": [
+    "build",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerbenmeyer/react-i18nify-mobx.git"
+  },
+  "author": "Gerben Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gerbenmeyer/react-i18nify-mobx/issues"
+  },
+  "homepage": "https://github.com/gerbenmeyer/react-i18nify-mobx#readme",
+  "keywords": [
+    "react",
+    "i18n",
+    "translation",
+    "localization",
+    "components",
+    "helpers",
+    "javascript",
+    "flux",
+    "mobx"
+  ],
+  "dependencies": {
+    "react-i18nify": "^2.0.0-5"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3"
+  }
+}
